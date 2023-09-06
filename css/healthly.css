@@ -1,0 +1,559 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 22px;
+}
+
+.encabezado {
+  margin-bottom: 20px;
+  background-color: white;
+  justify-content: space-around;
+  padding: 10px;
+  top: 0;
+  width: 99%;
+  height: 5vh;
+  z-index: 8;
+}
+
+.Logo {
+  width: 200px;
+  height: auto;
+  margin: 20px;
+  margin-left: 20px;
+  margin-top: 0px;
+  margin-right: 125px;
+}
+
+.boton {
+  justify-content: right;
+  padding: 10px 15px;
+  color: rgb(0, 51, 160);
+  background: #fff;
+  border: 0;
+  cursor: pointer;
+  border-radius: 10px;
+  margin-top: 10px;
+  transition: background-color 0.3s;
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 22px;
+}
+
+.boton:hover {
+  background: rgb(0, 174, 199);
+}
+
+.boton2 {
+  padding: 10px 15px;
+  background: rgb(0, 51, 160);
+  color: white;
+  border: 1px;
+  cursor: pointer;
+  border-radius: 10px;
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 22px;
+
+}
+
+.botonMedico1 {
+  justify-content: right;
+  padding: 10px 15px;
+  color: rgb(0, 51, 160);
+  background: #fff;
+  border: 0;
+  cursor: pointer;
+  border-radius: 10px;
+  margin-top: 10px;
+  transition: background-color 0.3s;
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 22px;
+}
+
+.botonMedico1:hover {
+  background: rgb(0, 174, 199);
+}
+
+.boton3 {
+  padding: 10px 15px;
+  background: rgb(0, 51, 160);
+  color: white;
+  border: 1px;
+  cursor: pointer;
+  border-radius: 10px;
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 22px;
+}
+
+.botonAdmin1 {
+  justify-content: right;
+  padding: 10px 15px;
+  color: rgb(0, 51, 160);
+  background: #fff;
+  border: 0;
+  cursor: pointer;
+  border-radius: 10px;
+  margin-top: 10px;
+  transition: background-color 0.3s;
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 22px;
+}
+
+.botonAdmin1:hover {
+  background: rgb(0, 174, 199);
+}
+
+.botonAdmin2 {
+  padding: 10px 15px;
+  background: rgb(0, 51, 160);
+  color: white;
+  border: 1px;
+  cursor: pointer;
+  border-radius: 10px;
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 22px;
+}
+
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
+#header {
+  margin: 20px;
+  width: 99%;
+}
+
+.menu {
+  list-style: none;
+}
+
+.menu ul {
+  list-style: none;
+  margin-left: 60px;
+}
+
+.menu li a {
+  margin-top: 10px;
+  background-color: white;
+  color: rgb(0, 51, 160);
+  text-decoration: none;
+  border-radius: 10px;
+  padding: 10px 15px;
+  display: block;
+  z-index: 9;
+}
+
+.menu a:hover {
+  background-color: rgb(0, 174, 199);
+}
+
+.menu>li {
+  float: left;
+}
+
+.menu li ul {
+  display: none;
+  position: absolute;
+  margin-top: 5px;
+}
+
+.menu li:hover>ul {
+  display: block;
+}
+
+.contenido-principal {
+  background-color: rgb(0, 51, 160);
+  margin-top: 10px;
+  padding: 40px;
+  display: flex;
+  justify-content: flex-start;
+  width: 100%;
+  height: 100vh;
+  z-index: 3;
+}
+
+.paginas {
+  background-color: rgb(0, 51, 160);
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+  background-color: #fff;
+  margin: 10% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  max-width: 400px;
+  position: relative;
+}
+
+.close {
+  position: absolute;
+  top: 0;
+  right: 10px;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.modalMedico {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 99%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-contentMedico {
+  background-color: #fff;
+  margin: 10% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  max-width: 400px;
+  position: relative;
+}
+
+.closeMedico {
+  position: absolute;
+  top: 0;
+  right: 10px;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.modalAdmin {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 99%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-contentAdmin {
+  background-color: #fff;
+  margin: 10% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  max-width: 400px;
+  position: relative;
+}
+
+.closeAdmin {
+  position: absolute;
+  top: 0;
+  right: 10px;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.registro {
+  position: fixed;
+  top: 50%;
+  right: 0;
+  width: 300px;
+  padding: 20px;
+  background-color: rgb(246, 247, 246);
+  border-radius: 5px;
+  z-index: 9;
+  transform: translateY(-50%);
+}
+
+.registro h4 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  color: rgb(254, 254, 254);
+}
+
+.control {
+  margin-bottom: 10px;
+  padding: 5px;
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+.registro button {
+  display: block;
+  width: 99%;
+  padding: 10px;
+  background-color: rgb(248, 248, 248);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.registro p {
+  height: 40px;
+  text-align: center;
+  font-size: 18px;
+}
+
+.registro a {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+}
+
+.slider {
+  overflow: hidden;
+  width: 99%;
+  max-width: 800px;
+  margin: 0 auto;
+  margin-top: 90px;
+}
+
+img {
+  width: 1000px;
+  height: 300px;
+}
+
+.slide {
+  position: relative;
+  width: 99%;
+  display: none;
+}
+
+.slide img {
+  width: 99%;
+  height: auto;
+}
+
+.prev,
+.next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  padding: 5px;
+  border: none;
+  font-size: 14px;
+}
+
+.prev {
+  margin-top: 200px;
+  transform: translateX(0px);
+}
+
+.next {
+  margin-top: 220px;
+  transform: translateX(749px);
+}
+
+.item {
+  scroll-padding-top: 8ex;
+}
+
+.encabezado¿ {
+  margin-bottom: 0px;
+  background-color: rgb(0, 51, 160);
+  justify-content: space-around;
+  padding: 10px;
+  width: 99%;
+  height: 5vh;
+}
+
+.menu¿ {
+  list-style: none;
+}
+
+.menu¿ ul {
+  list-style: none;
+  margin-left: 60px;
+}
+
+.menu¿ li a {
+  background-color:rgb(0, 51, 160); 
+  color: white;
+  text-decoration: none;
+  display: block;
+}
+
+.encabezadoContacto {
+  margin-bottom: 0px;
+  background-color: rgb(0, 51, 160);
+  justify-content: space-around;
+  padding: 10px;
+  width: 99%;
+  height: 5vh;
+}
+
+
+.menuContacto {
+  list-style: none;
+}
+
+.menuContacto ul {
+  list-style: none;
+  margin-left: 60px;
+}
+
+.menuContacto li a {
+  background-color: rgb(0, 51, 160);
+  color: white;
+  text-decoration: none;
+  display: block;
+}
+
+.encabezadoPaciente {
+  display: flex;
+  background-color:  rgb(0, 51, 160);
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  width: 100%;
+  height: 5vh;
+}
+
+.menuPaciente {
+  list-style: none;
+  display: flex;
+}
+
+.menuPaciente li {
+  margin-right: 400px;
+}
+
+.menuPaciente li:last-child {
+  margin-right: 0;
+}
+
+.menuPaciente li a {
+  background-color: rgb(0, 51, 160);
+  color:white;
+  text-decoration: none;
+  display: block;
+}
+
+.encabezadoMedico {
+  display: flex;
+  background-color:  rgb(0, 51, 160);
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  width: 100%;
+  height: 5vh;
+}
+
+.menuMedico {
+  list-style: none;
+  display: flex;
+}
+
+.menuMedico li {
+  margin-right: 80px;
+}
+
+.menuMedico li:last-child {
+  margin-right: 0;
+}
+
+.menuMedico li a {
+  background-color: rgb(0, 51, 160);
+  color:white;
+  text-decoration: none;
+  display: block;
+}
+
+.encabezadoAdmin {
+  display: flex;
+  background-color:  rgb(0, 51, 160);
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  width: 100%;
+  height: 5vh;
+}
+
+.menuAdmin {
+  list-style: none;
+  display: flex;
+}
+
+.menuAdmin li {
+  margin-right: 80px;
+}
+
+.menuAdmin li:last-child {
+  margin-right: 0;
+}
+
+.menuAdmin li a {
+  background-color: rgb(0, 51, 160);
+  color:white;
+  text-decoration: none;
+  display: block;
+}
+
+p{
+  height: 560px; ;
+  width: 99%;
+  background-color: white;
+  color: rgb(83, 86, 90);
+  padding-left: 20px;
+  padding-top: 20px;
+}
+ footer{
+  height: 560px; ;
+  width: 99%;
+  background-color: white;
+  color: rgb(83, 86, 90);
+  padding-left: 20px;
+  padding-top: 20px;
+
+ }
+
+.logos{
+  height: 50px;
+  width: auto;
+  transform: translateY(15px);
+}
+
+.hiper{
+  text-decoration: none;
+  color: black;
+}
+
+.hiper:hover{
+  color: rgb(0, 51, 160) ;
+}
+
+.imgPaciente{
+  justify-content: center;
+  height: 400px;
+  width: auto;
+}
+
+.imgMedico{
+  transform: translateX(400px);
+  height: 500px;
+  width: auto;
+}
+
+.imgAdmin{
+  transform: translateX(250px);
+  height: 500px;
+  width: auto;
+}

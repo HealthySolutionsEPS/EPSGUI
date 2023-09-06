@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/healthly.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+
+<body>
+    <header id="header" class="encabezado">
+
+
+        <div class="menu">
+            <li> <img class="Logo" src="../img/logohealthy.png" alt="Logo"></li>
+
+            <li><a href="#Inicio">Inicio</a></li>
+            <li><a href="#¿Quienes somos?">¿Quienes somos?</a></li>
+            <li><a href="#Contactanos">Contactanos</a></li>
+
+            <li class="submenu">
+                <a href="#">Inicio de sesión</a>
+                <ul>
+                    <li><button type="submit" class="boton" id="openModalBtn">paciente</button>
+                        <ul>
+                            <div id="myModal" class="modal">
+                                <div class="modal-content">
+                                    <span class="close">&times;</span>
+                                    <h4>Por favor ingrese sus datos</h4>
+                                    <form>
+                                        <label for="nombre">Nombre:</label>
+                                        <input class="control" type="text" id="nombre" placeholder="Nombre">
+
+                                        <label for="Apellido">Apellido:</label>
+                                        <input class="control" type="text" id="Apellido" placeholder="Apellidos">
+
+                                        <label for="Contraseña">Contraseña:</label>
+                                        <input class="control" type="text" id="Contraseña" placeholder="Contraseña">
+                                        <a href="#paciente" class="boton2" id="cerrarboton">Ingresar</a>
+                                    </form>
+                                </div>
+                        </ul>
+                    </li>
+
+                    <li><button type="submit" class="botonMedico1" id="openModalBtnMedico">medico</button>
+
+                        <ul>
+                            <div id="myModalMedico" class="modalMedico">
+                                <div class="modal-contentMedico">
+                                    <span class="closeMedico">&times;</span>
+                                    <h4>Por favor ingrese sus datos</h4>
+                                    <form>
+                                        <label for="nombre">Nombre:</label>
+                                        <input class="control" type="text" id="nombre" placeholder="Nombre">
+
+                                        <label for="Apellido">Apellido:</label>
+                                        <input class="control" type="text" id="Apellido" placeholder="Apellidos">
+
+                                        <label for="Contraseña">Contraseña:</label>
+                                        <input class="control" type="text" id="Contraseña" placeholder="Contraseña">
+                                        <a href="#medico" class="boton3" id="cerrarbotonMedico2">Ingresar</a>
+                                    </form>
+                                </div>
+                        </ul>
+                    </li>
+                    <li><button type="submit" class="botonAdmin1" id="openModalBtnAdmin">Administrador</button>
+
+                        <ul>
+                            <div id="myModalAdmin" class="modalAdmin">
+                                <div class="modal-contentAdmin">
+                                    <span class="closeAdmin">&times;</span>
+                                    <h4>Por favor ingrese sus datos</h4>
+                                    <form>
+                                        <label for="nombre">Nombre:</label>
+                                        <input class="control" type="text" id="nombre" placeholder="Nombre">
+
+                                        <label for="Apellido">Apellido:</label>
+                                        <input class="control" type="text" id="Apellido" placeholder="Apellidos">
+
+                                        <label for="Contraseña">Contraseña:</label>
+                                        <input class="control" type="text" id="Contraseña" placeholder="Contraseña">
+                                        <a href="#Administrador" class="botonAdmin2" id="cerrarbotonAdmin2">Ingresar</a>
+                                    </form>
+                                </div>
+                        </ul>
+                    </li>
+        </div>
+    </header>
+
+
+    <main class="contenido-principal">
+
+        <div class="slider">
+
+            <div class="slide"><img src="../img/tigre.jpg" alt="Image 1"></div>
+            <div class="slide"><img src="../img/tigre_sura.jpg" alt="Image 1"></div>
+            <div class="slide"><img src="../img/tigre_sura_2.jpeg" alt="Image 1"></div>
+            <div class="slide"><img src="../img/tigre_sura_3.jpeg" alt="Image 2"></div>
+
+            <button class="prev">prev</button>
+            <button class="next">next</button>
+        </div>
+
+
+    </main>
+
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h4>Registrate con nosotros</h4>
+            <form>
+                <label for="nombre">Nombre:</label>
+                <input class="control" type="text" id="nombre" placeholder="Nombre">
+
+                <label for="Apellido">Apellido:</label>
+                <input class="control" type="text" id="Apellido" placeholder="Apellidos">
+
+                <label for="Contraseña">Contraseña:</label>
+                <input class="control" type="password" id="Contraseña" placeholder="Contraseña">
+                <button class="boton2" id="cerrarboton">Registrarme</button>
+            </form>
+        </div>
+    </div>
+
+
+    <main class="paginas">
+
+        <div class="item" id="¿Quienes somos?">
+
+            <section class="encabezado¿">
+                <div class="menu¿">
+                    <li><a href="">¿Quienes somos?</a></li>
+                </div>
+            </section>
+            
+            <p>  Una Empresa dedicada a la creación de programas y aplicaciones en software 
+                Nuestro objetivo es proporcionar soluciones informáticas y de gestión adecuadas a cada cliente, usando tecnologías y metodologías avanzadas.
+                 con pocos años en el mercado, pero cuenta con un gran equipo de profesionales capacitados y motivados
+                Si algo garantiza los resultados de nuestro trabajo es nuestra alta responsabilidad en la gestión de los proyectos, y una buena planificación.
+                Una buena base sólida siempre fortalece el vínculo con nuestros clientes y garantiza un trabajo bien hecho y profesional
+                Hoy viendo la necesidad que algunos usuarios tienen para diligenciar e ingresar a las plataformas de salud 
+                Creamos una forma más sencilla para que el público en general pueda acceder a ellas y así facilitar su uso. </p>
+
+        </div>
+
+        <div class="item" id="Contactanos">
+            <section class="encabezadoContacto">
+                <div class="menuContacto">
+                    <li><a href="">Contacto</a></li>
+                </div>
+            </section>
+
+            <footer>
+               <section>
+                <img class="logos" src="../img/facebook.png" alt="">
+                <a class="hiper" href="">Facebook</a> 
+               </section>
+                <section>
+                    <img class="logos" src="../img/instagram.jpeg" alt="">
+                <a class="hiper" href="">Instagram</a>
+                </section>
+                <section><img class="logos" src="../img/whatsapp.png" alt="">
+                    <a class="hiper" href="">Whatsapp</a></section>
+                <section>
+                    <img class="logos" src="../img/git.png" alt="">
+                <a class="hiper" href="">GitHub</a> 
+                </section>
+            </footer>
+
+            </div>
+
+
+        </div>
+
+        <div class="item" id="paciente">
+            <section class="encabezadoPaciente">
+                <ul class="menuPaciente">
+                    <li><a href="#">paciente</a></li>
+                    <li><a href="#">listado de medicos</a></li>
+                </ul>
+            </section>
+        </div>
+
+        <p><img class="imgPaciente" src="../img/paciente.png" alt=""></p>
+
+        </div>
+
+        <div class="item" id="medico">
+            <section class="encabezadoMedico">
+                <ul class="menuMedico">
+                    <li><a href="#">Medico</a></li>
+                    <li><a href="#">Mi registro de horas</a></li>
+                    <li><a href="">salario total del mes</a></li>
+                    <li><a href="">Listado de especialistas</a></li>
+                </ul>
+            </section>
+
+            <p><img class="imgMedico" src="../img/medico.jpg" alt=""></p>
+
+        </div>
+
+        <div class="item" id="Administrador">
+
+            <div class="item" id="Administrador">
+                <section class="encabezadoAdmin">
+                    <ul class="menuAdmin">
+                        <li><a href="#">Administrador</a></li>
+                        <li><a href="#">Añadir especialista</a></li>
+                        <li><a href="">Quitar especialista</a></li>
+                        <li><a href="">Buscar especialista por cc</a></li>
+                        <li><a href="">Salarios especialistas</a></li>
+                        <li><a href="">Fecha de entrada</a></li>
+                    </ul>
+                </section>
+
+                <p> <img class="imgAdmin" src="../img/admin.jpg" alt=""> </p>
+            </div>
+    </main>
+    <script src="../js/healthy.js"></script>
+</body>
+
+</html>
